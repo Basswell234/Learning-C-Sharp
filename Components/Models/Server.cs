@@ -4,11 +4,11 @@ namespace Csharp.Components.Models{
         public Server(){
             Random random = new Random();
             int randomNumber = random.Next(0,2);
-            isOnline = randomNumber == 0? false : true;
+            IsOnline = randomNumber == 0? false : true;
         }
 
         public int ServerId{get; set;}
-        public bool isOnline{get; set;}
+        public bool IsOnline{get; set;}
         public string? ServerName{get; set;}
         public string? City{get; set;}
     }
